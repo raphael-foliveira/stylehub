@@ -19,7 +19,7 @@ jobs:
           echo "$PRIVATE_KEY" > private_key.pem
           chmod 600 private_key.pem
           ssh -i private_key.pem -o StrictHostKeyChecking=no $EC2_USER@$EC2_HOST "
-            cd ~/stylehub && git pull && 
-            pm2 delete 1; pm2 start yarn --name stylehub -- serve
+            cd ~/stylehub && git pull && yarn &&
+            pm2 delete stylehub; pm2 start 'yarn serve' --name stylehub
           "
           rm -f private_key.pem
