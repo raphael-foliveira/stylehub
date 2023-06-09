@@ -9,7 +9,7 @@ export default function Reviews() {
           inovadores de divulgação e agendamento integrado, ele simplifica e melhora a experiência de todos os envolvidos. É uma solução
           indispensável para quem busca praticidade, qualidade e conexões mais eficientes no mundo da beleza.
         </h3>
-        <p>- Alice, Brazil</p>
+        <p>- Alice, Salvador</p>
       </div>
     </div>
   );
