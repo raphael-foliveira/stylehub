@@ -1,0 +1,16 @@
+.contactFormContainer input:focus-visible,
+.contactFormContainer textarea:focus-visible {
+  outline: none;
+}
+.textContainer h2 {
+  line-height: 1;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.textContainer p {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 3em;
+}
