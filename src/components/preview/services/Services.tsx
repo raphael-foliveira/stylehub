@@ -27,7 +27,7 @@ export default function Services() {
       <div className="flex">
         {servicesInfo.map((service) => {
           return (
-            <div className="w-1/3 p-4 h-96 text-center">
+            <div className="w-1/3 p-4 h-96 text-center" key={service.key}>
               <img src={service.image.src} alt="" className="object-cover h-full w-auto m-auto" />
               <h3 className="text-3xl">{service.description}</h3>
             </div>
