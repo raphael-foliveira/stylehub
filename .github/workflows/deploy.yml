@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Build containers
+      - name: deploy
         env:
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           EC2_USER: ${{ secrets.EC2_USER }}
@@ -19,7 +19,7 @@ jobs:
           echo "$PRIVATE_KEY" > private_key.pem
           chmod 600 private_key.pem
           ssh -i private_key.pem -o StrictHostKeyChecking=no $EC2_USER@$EC2_HOST "
-            cd ~/simple-chat && git pull && 
+            cd ~/stylehub && git pull && 
             pm2 delete 1; pm2 start yarn --name stylehub -- serve
           "
           rm -f private_key.pem
