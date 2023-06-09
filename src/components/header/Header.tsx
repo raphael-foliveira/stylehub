@@ -12,8 +12,8 @@ export default function TopBar() {
     router.push("/");
   };
   return (
-    <div className={styles.headerContainer + " flex justify-between px-8 py-6 w-full"}>
-      <div className={"flex justify-between w-1/5"}>
+    <div className={"flex flex-wrap justify-center lg:justify-between px-8 py-6 w-full"}>
+      <div className={"flex flx-wrap w-full mb-4 justify-between lg:w-1/5"}>
         <div className="my-auto text-xl">
           <Link href="/">Home</Link>
         </div>
@@ -24,8 +24,10 @@ export default function TopBar() {
           <Link href="/preview">Preview</Link>
         </div>
       </div>
-      <Image src={MainLogo} alt="Main Logo" onClick={handleClick} />
-      <div className={styles.contactInfo + " flex my-auto w-1/5 justify-end"}>
+      <div className="w-full lg:w-2/5 flex justify-center">
+        <Image src={MainLogo} alt="Main Logo" onClick={handleClick} className="h-40 w-auto mb-4" />
+      </div>
+      <div className={styles.contactInfo + " flex my-auto lg:w-1/5 justify-end"}>
         <a href="#contactForm">
           <PButton>Contato</PButton>
         </a>

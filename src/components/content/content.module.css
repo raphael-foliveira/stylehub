@@ -5,17 +5,6 @@
   height: 800px;
 }
 
-.textContainer {
-  width: 40%;
-}
-
-.textContainer h2 {
-  line-height: 1;
-  font-size: 4.5rem;
-  font-weight: 500;
-  margin-bottom: 0.5em;
-}
-
 .textContainer p {
   font-size: 24px;
   font-weight: 300;
@@ -23,8 +12,6 @@
 }
 
 .reviewsContainer h3 {
-  font-size: 32px;
-  font-weight: 500;
   line-height: 1.3;
 }
 

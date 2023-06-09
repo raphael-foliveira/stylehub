@@ -8,12 +8,12 @@ export default function ContactForm() {
     e.preventDefault();
   };
   return (
-    <div className={styles.contactFormContainer + " flex px-20 py-12"} id="contactForm">
-      <div className={styles.textContainer + " w-1/2 text-center my-auto"}>
+    <div className={styles.contactFormContainer + " flex flex-wrap lg:px-20 py-12"} id="contactForm">
+      <div className={styles.textContainer + " w-full lg:w-1/2 text-center my-auto"}>
         <h2>Entre em contato</h2>
         <p>Mande uma mensagem para saber mais sobre nosso produto</p>
       </div>
-      <form onSubmit={handleSubmit} className="w-1/2 flex flex-wrap ">
+      <form onSubmit={handleSubmit} className="w-full lg:w-1/2 flex flex-wrap ">
         <label htmlFor="name" className="w-1/2 px-2">
           <p>Nome</p>
           <input

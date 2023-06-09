@@ -15,7 +15,7 @@ export default function Pictures() {
       <div className="flex flex-wrap">
         {previewPictures.map((pic, index) => {
           return (
-            <div className="w-1/3 p-6 h-96 my-8" key={index}>
+            <div className="w-full lg:w-1/3 p-6 h-96 my-8" key={index}>
               <img src={pic.src} alt="" className={styles.previewImg} />
             </div>
           );

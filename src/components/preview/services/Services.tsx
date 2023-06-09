@@ -24,10 +24,10 @@ export default function Services() {
   return (
     <div className="mb-10">
       <h2 className="text-center font-bold text-3xl my-10">Cortes & Serviços</h2>
-      <div className="flex">
+      <div className="flex flex-wrap mb-10">
         {servicesInfo.map((service) => {
           return (
-            <div className="w-1/3 p-4 h-96 text-center" key={service.key}>
+            <div className="w-full lg:w-1/3 p-4 h-96 text-center mb-10" key={service.key}>
               <img src={service.image.src} alt="" className="object-cover h-full w-auto m-auto" />
               <h3 className="text-3xl">{service.description}</h3>
             </div>
