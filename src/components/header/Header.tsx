@@ -9,7 +9,7 @@ export default function TopBar() {
       <div className="w-40"></div>
       <Image src={MainLogo} alt="Main Logo" />
       <div className={styles.contactInfo + " flex my-auto"}>
-        <a href="#">
+        <a href="#contactForm">
           <PButton>Contato</PButton>
         </a>
       </div>

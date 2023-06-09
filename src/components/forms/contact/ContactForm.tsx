@@ -8,7 +8,7 @@ export default function ContactForm() {
     e.preventDefault();
   };
   return (
-    <div className={styles.contactFormContainer + " flex px-20 py-12"}>
+    <div className={styles.contactFormContainer + " flex px-20 py-12"} id="contactForm">
       <div className={styles.textContainer + " w-1/2 text-center my-auto"}>
         <h2>Entre em contato</h2>
         <p>Mande uma mensagem para saber mais sobre nosso produto</p>

@@ -11,7 +11,9 @@ export default function TopContent() {
           seleção de estilos, do clássico ao moderno, é fácil encontrar o look perfeito para qualquer ocasião. Experimente a conveniência e
           a qualidade do Stylehub hoje!
         </p>
-        <WhiteButton>Contato</WhiteButton>
+        <a href="#contactForm">
+          <WhiteButton>Contato</WhiteButton>
+        </a>
       </div>
     </div>
   );
