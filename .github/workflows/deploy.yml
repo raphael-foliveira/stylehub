@@ -23,15 +23,15 @@ jobs:
           yarn install
           yarn build
 
-          - name: deploy
-          env:
-            PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-            EC2_USER: ${{ secrets.EC2_USER }}
-            EC2_HOST: ${{ secrets.EC2_HOST }}
-          run: |
-            echo "$PRIVATE_KEY" > private_key.pem
-            chmod 600 private_key.pem
-            rsync -r -a -v -e "ssh -i private_key.pem -o StrictHostKeyChecking=no" --delete ./ $EC2_USER@$EC2_HOST:~/stylehub
-            rsync -r -a -v -e "ssh -i private_key.pem -o StrictHostKeyChecking=no" ./deploy.sh $EC2_USER@$EC2_HOST:~/stylehub/deploy.sh
-            ssh -i private_key.pem -o StrictHostKeyChecking=no $EC2_USER@$EC2_HOST "chmod +x ~/stylehub/deploy.sh && bash ~/stylehub/deploy.sh"
-            rm -f private_key.pem
+      - name: deploy
+        env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          EC2_USER: ${{ secrets.EC2_USER }}
+          EC2_HOST: ${{ secrets.EC2_HOST }}
+        run: |
+          echo "$PRIVATE_KEY" > private_key.pem
+          chmod 600 private_key.pem
+          rsync -r -a -v -e "ssh -i private_key.pem -o StrictHostKeyChecking=no" --delete ./ $EC2_USER@$EC2_HOST:~/stylehub
+          rsync -r -a -v -e "ssh -i private_key.pem -o StrictHostKeyChecking=no" ./deploy.sh $EC2_USER@$EC2_HOST:~/stylehub/deploy.sh
+          ssh -i private_key.pem -o StrictHostKeyChecking=no $EC2_USER@$EC2_HOST "chmod +x ~/stylehub/deploy.sh && bash ~/stylehub/deploy.sh"
+          rm -f private_key.pem
