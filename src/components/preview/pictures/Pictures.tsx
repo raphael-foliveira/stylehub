@@ -13,9 +13,9 @@ export default function Pictures() {
     <>
       <h2 className="text-center font-bold text-3xl">Fotos</h2>
       <div className="flex flex-wrap">
-        {previewPictures.map((pic) => {
+        {previewPictures.map((pic, index) => {
           return (
-            <div className="w-1/3 p-6 h-96 my-8">
+            <div className="w-1/3 p-6 h-96 my-8" key={index}>
               <img src={pic.src} alt="" className={styles.previewImg} />
             </div>
           );

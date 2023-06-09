@@ -5,21 +5,24 @@ import Services3 from "../../../static/img/preview/services3.webp";
 export default function Services() {
   const servicesInfo = [
     {
+      key: 1,
       image: Services1,
       description: "Corte V.O com degradê: R$25,00",
     },
     {
+      key: 2,
       image: Services2,
       description: "Barba com desenho: R$20,00",
     },
     {
+      key: 3,
       image: Services3,
       description: "Design de sobrancelhas: R$30,00",
     },
   ];
 
   return (
-    <div>
+    <div className="mb-10">
       <h2 className="text-center font-bold text-3xl my-10">Cortes & Serviços</h2>
       <div className="flex">
         {servicesInfo.map((service) => {
