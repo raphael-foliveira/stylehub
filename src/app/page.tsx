@@ -5,7 +5,7 @@ import ContactForm from "@/components/forms/contact/ContactForm";
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <TopContent />
       <Reviews />
       <SeePreview />
