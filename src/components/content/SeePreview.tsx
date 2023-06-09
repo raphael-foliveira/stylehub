@@ -1,3 +1,4 @@
+import Link from "next/link";
 import WhiteButton from "../UI/buttons/WhiteButton";
 import styles from "./content.module.css";
 
@@ -7,7 +8,9 @@ export default function SeePreview() {
       <div className={styles.textContainer + " my-auto"}>
         <h2>Venha ver nossa Pré-Visualização</h2>
         <p>Uma rápida demonstração do que somos capazes</p>
-        <WhiteButton className="w-2/5">Pré-Visualização</WhiteButton>
+        <Link href="/preview">
+          <WhiteButton className="w-2/5">Visualizar</WhiteButton>
+        </Link>
       </div>
     </div>
   );
