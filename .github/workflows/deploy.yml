@@ -35,8 +35,8 @@ jobs:
           ssh -i private_key.pem -o StrictHostKeyChecking=no $EC2_USER@$EC2_HOST "
             source ~/.bashrc;
             cd ~/stylehub; 
-            yarn install;
-            pm2 delete stylehub; 
-            pm2 start 'yarn start -p 8000' --name stylehub;
+            /home/ubuntu/.nvm/versions/node/v18.16.0/bin/yarn install;
+            /home/ubuntu/.nvm/versions/node/v18.16.0/bin/pm2 delete stylehub; 
+            /home/ubuntu/.nvm/versions/node/v18.16.0/bin/pm2 start 'yarn start -p 8000' --name stylehub;
           "
           rm -f private_key.pem
