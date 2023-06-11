@@ -29,7 +29,7 @@ export default function TopBar() {
       </div>
       <div className={styles.contactInfo + " flex my-auto lg:w-1/5 justify-end"}>
         <a href="#contactForm">
-          <PButton>Contato</PButton>
+          <PButton type="button">Contato</PButton>
         </a>
       </div>
     </div>
