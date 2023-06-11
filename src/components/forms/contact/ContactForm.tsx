@@ -13,7 +13,7 @@ export default function ContactForm() {
         <h2>Entre em contato</h2>
         <p>Mande uma mensagem para saber mais sobre nosso produto</p>
       </div>
-      <form onSubmit={handleSubmit} className="w-full lg:w-1/2 flex flex-wrap ">
+      <form onSubmit={handleSubmit} className="w-full lg:w-1/2 flex flex-wrap">
         <label htmlFor="name" className="w-1/2 px-2">
           <p>Nome</p>
           <input
@@ -42,7 +42,7 @@ export default function ContactForm() {
           />
         </label>
         <div className="w-full flex justify-end pr-2 mt-4">
-          <PButton>Enviar</PButton>
+          <PButton type="submit">Enviar</PButton>
         </div>
       </form>
     </div>
