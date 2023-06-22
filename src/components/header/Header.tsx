@@ -27,7 +27,7 @@ export default function TopBar() {
       <div className="w-full lg:w-2/5 flex justify-center">
         <Image src={MainLogo} alt="Main Logo" onClick={handleClick} className="h-40 w-auto mb-4" />
       </div>
-      <div className={styles.contactInfo + " flex my-auto lg:w-1/5 justify-end"}>
+      <div className={`${styles.contactInfo} flex my-auto lg:w-1/5 justify-end`}>
         <a href="/#contactForm">
           <PButton type="button">Contato</PButton>
         </a>
