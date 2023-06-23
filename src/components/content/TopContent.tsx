@@ -3,8 +3,8 @@ import styles from "./content.module.css";
 
 export default function TopContent() {
   return (
-    <div className={styles.topContent + " w-100 text-center text-white flex flex-wrap justify-center"}>
-      <div className={styles.textContainer + " my-auto p-2 lg:w-1/2"}>
+    <div className={`${styles.topContent} w-100 text-center text-white flex flex-wrap justify-center`}>
+      <div className={`${styles.textContainer} my-auto p-2 lg:w-1/2`}>
         <h2 className="font-bold lg:text-6xl text-3xl">O Lugar onde você acha seu estilo</h2>
         <p>
           A Stylehub é o e-commerce do Brasil, oferecendo cortes de cabelo, aparas e produtos de styling de alta qualidade. Com uma ampla
